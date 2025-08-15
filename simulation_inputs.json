@@ -1,0 +1,126 @@
+{
+  "locations": {
+    "A": {
+      "location_id": "A",
+      "base_load": 3,
+      "gamma": 1,
+      "base_unload": 2,
+      "delta": 1
+    },
+    "B": {
+      "location_id": "B",
+      "base_load": 4,
+      "gamma": 1,
+      "base_unload": 3,
+      "delta": 1
+    },
+    "C": {
+      "location_id": "C",
+      "base_load": 2,
+      "gamma": 2,
+      "base_unload": 2,
+      "delta": 1
+    },
+    "D": {
+      "location_id": "D",
+      "base_load": 5,
+      "gamma": 1,
+      "base_unload": 1,
+      "delta": 2
+    }
+  },
+  "arcs": [
+    {
+      "from_location": "A",
+      "to_location": "B",
+      "transit_time": 30
+    },
+    {
+      "from_location": "B",
+      "to_location": "C",
+      "transit_time": 25
+    },
+    {
+      "from_location": "C",
+      "to_location": "D",
+      "transit_time": 20
+    },
+    {
+      "from_location": "D",
+      "to_location": "A",
+      "transit_time": 35
+    },
+    {
+      "from_location": "A",
+      "to_location": "C",
+      "transit_time": 45
+    },
+    {
+      "from_location": "B",
+      "to_location": "D",
+      "transit_time": 40
+    }
+  ],
+  "orders": [
+    {
+      "order_id": "P1",
+      "origin": "A",
+      "destination": "C",
+      "release_time": 0,
+      "due_time": 160,
+      "units": 2
+    },
+    {
+      "order_id": "P2",
+      "origin": "A",
+      "destination": "D",
+      "release_time": 15,
+      "due_time": 200,
+      "units": 1
+    },
+    {
+      "order_id": "P3",
+      "origin": "B",
+      "destination": "A",
+      "release_time": 0,
+      "due_time": 180,
+      "units": 3
+    },
+    {
+      "order_id": "P4",
+      "origin": "C",
+      "destination": "B",
+      "release_time": 30,
+      "due_time": 190,
+      "units": 2
+    },
+    {
+      "order_id": "P5",
+      "origin": "D",
+      "destination": "A",
+      "release_time": 60,
+      "due_time": 210,
+      "units": 1
+    },
+    {
+      "order_id": "P6",
+      "origin": "B",
+      "destination": "D",
+      "release_time": 0,
+      "due_time": 150,
+      "units": 1
+    }
+  ],
+  "fleet": [
+    {
+      "vehicle_id": "V1",
+      "capacity": 5,
+      "start_location": "A"
+    },
+    {
+      "vehicle_id": "V2",
+      "capacity": 5,
+      "start_location": "A"
+    }
+  ]
+} 

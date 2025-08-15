@@ -1,0 +1,16 @@
+# Dependencies for the routing simulation system
+# Python 3.8+ is recommended
+
+# Standard libraries (included with Python)
+# - typing
+# - datetime
+# - json
+# - math
+# - abc
+
+# For development and testing (optional)
+pytest>=7.0.0
+pytest-cov>=4.0.0
+coverage>=6.0.0
+numpy
+
